@@ -13,4 +13,3 @@ FEATURES:
 
 FUTURE IMPLEMENTATIONS:
   - Refined search;
-  - 
