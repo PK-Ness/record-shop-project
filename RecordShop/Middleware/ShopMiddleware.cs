@@ -1,6 +1,6 @@
 ﻿namespace RecordShop.Middleware
 {
-    public class LoggerMiddleware : IMiddleware
+    public class ShopMiddleware : IMiddleware
     {
         public async Task InvokeAsync(HttpContext context, RequestDelegate next)
         {

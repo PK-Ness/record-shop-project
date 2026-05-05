@@ -26,7 +26,12 @@ namespace RecordShop.Controllers
             return Ok(albums);
         }
 
+        [HttpPost("/albums")]
+        public IActionResult AddAlbum([FromBody] Album album)
+        {
+            var addedAlbum = _albumService.AddAlbum(album);
+            return CreatedAtAction(nameof(GetAllAlbums), new { id = addedAlbum.Id }, addedAlbum);
+        }
     }
 }
     
-

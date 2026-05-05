@@ -8,5 +8,21 @@
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RecordShop.Controllers.AlbumController",
+    "Method": "AddAlbum",
+    "RelativePath": "albums",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "album",
+        "Type": "RecordShop.Models.Album",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

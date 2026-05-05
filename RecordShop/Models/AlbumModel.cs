@@ -16,5 +16,15 @@ namespace RecordShop.Models
             var albums = JsonSerializer.Deserialize<List<Album>>(jsonData, option);
             return albums;
         }
+
+        public void AddAlbum(Album album)
+        {
+            var albums = GetAllAlbums();
+            albums.Add(album);
+
+            var options = new JsonSerializerOptions { WriteIndented = true };
+            string updatedJson = JsonSerializer.Serialize(albums, options);
+            File.WriteAllText(_filepath, updatedJson);
+        }
     }
 }

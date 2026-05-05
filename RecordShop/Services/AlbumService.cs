@@ -14,5 +14,14 @@ namespace RecordShop.Services
         {
             return _albumModel.GetAllAlbums();
         }
+
+        public Album? AddAlbum(Album album)
+        {
+            var model = _albumModel.GetAllAlbums();
+            int nextId = model.Any() ? model.Max(a => a.Id) + 1 : 1;
+            album.Id = nextId;
+            _albumModel.AddAlbum(album);
+            return album;
+        }
     }
 }
