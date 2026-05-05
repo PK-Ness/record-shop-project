@@ -1,0 +1,12 @@
+[
+  {
+    "ContainingType": "RecordShop.Controllers.AlbumController",
+    "Method": "GetAllAlbums",
+    "RelativePath": "albums",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

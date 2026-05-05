@@ -1,0 +1,22 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "RecordShop",
+    "version": "1.0"
+  },
+  "paths": {
+    "/albums": {
+      "get": {
+        "tags": [
+          "Album"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": { }
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "title": "Spirit",
+    "artist": "Leona Lewis",
+    "genre": [ "Pop", "R&B" ],
+    "releasedate": "09-11-2007",
+    "rating": 65,
+    "price": 9.99,
+    "description": "After winning 2006 XFactor UK, Leona Lewis\\'s debut album brought the British Music back to the World charts. Her massive hit \"Bleeding Love\" topped the charts in multiple countries, including Billboard\\'s Hot100 and, to this day, it remains the best-selling debut album by a female artist in the UK."
+
+  }
+
+]

@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.InMemory;
+using Microsoft.EntityFrameworkCore.SqlServer;
 
 namespace RecordShop
 {
@@ -13,6 +16,9 @@ namespace RecordShop
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            builder.Services.AddScoped<Models.AlbumModel>();
+            builder.Services.AddScoped<Services.AlbumService>();
+            builder.Services.AddTransient<Middleware.ShopMiddleware>();
 
             var app = builder.Build();
 
