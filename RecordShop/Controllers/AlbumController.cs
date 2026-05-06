@@ -1,6 +1,5 @@
 ﻿
 using Microsoft.AspNetCore.Mvc;
-
 using Microsoft.AspNetCore.Components;
 using RecordShop.Models;
 using RecordShop.Services;
@@ -27,10 +26,32 @@ namespace RecordShop.Controllers
             return Ok(albums);
         }
         [HttpGet("/albums/{id}")]
-        public IActionResult GetAlbum(int id) 
+        public IActionResult GetAlbum(int id)
         {
             var albums = _albumService.GetAllAlbums();
             var album = albums.FirstOrDefault(a => a.Id == id);
+            if (album == null)
+            {
+                return NotFound();
+            }
+            return Ok(album);
+        }
+        [HttpGet("/albums/title/")]
+        public IActionResult GetAlbumByTitle(string title)
+        {
+            var albums = _albumService.GetAllAlbums();
+            var album = albums.FindAll(a => a.Title.Contains(title, StringComparison.OrdinalIgnoreCase));
+            if (album == null)
+            {
+                return NotFound();
+            }
+            return Ok(album);
+        }
+        [HttpGet("/albums/artist/")]
+        public IActionResult GetAlbumByArtist(string artist)
+        {
+            var albums = _albumService.GetAllAlbums();
+            var album = albums.FindAll(a => a.Artist.Contains(artist, StringComparison.OrdinalIgnoreCase));
             if (album == null)
             {
                 return NotFound();
@@ -52,7 +73,8 @@ namespace RecordShop.Controllers
             if (album == null)
             {
                 return NotFound();
-            } return Ok(album);
+            }
+            return Ok(album);
         }
         [Authorize]
         [HttpPut("/albums/{id}")]

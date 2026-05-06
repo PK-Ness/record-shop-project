@@ -82,5 +82,37 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RecordShop.Controllers.AlbumController",
+    "Method": "GetAlbumByArtist",
+    "RelativePath": "albums/artist",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "artist",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RecordShop.Controllers.AlbumController",
+    "Method": "GetAlbumByTitle",
+    "RelativePath": "albums/title",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "title",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
   }
 ]
