@@ -1,7 +1,8 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.InMemory;
 using Microsoft.EntityFrameworkCore.SqlServer;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
@@ -22,6 +23,7 @@ namespace RecordShop
             builder.Services.AddScoped<Models.AlbumModel>();
             builder.Services.AddScoped<Services.AlbumService>();
             builder.Services.AddTransient<Middleware.ShopMiddleware>();
+            builder.Services.AddHealthChecks().AddCheck<ShopHealthChecks>("shop_file_health_check", failureStatus: HealthStatus.Unhealthy, tags: new[] { "albums" });
 
             var key = Encoding.UTF8.GetBytes("BUTTERFREEUSESSILVERWIND-ITSSUPEREFFECTIVE!ALAZAKAMFAINTED");
 
@@ -44,7 +46,7 @@ namespace RecordShop
                 };
             });
             var app = builder.Build();
-
+            app.MapHealthChecks("/health");
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {

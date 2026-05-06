@@ -101,6 +101,22 @@
   },
   {
     "ContainingType": "RecordShop.Controllers.AlbumController",
+    "Method": "GetAlbumByGenre",
+    "RelativePath": "albums/genre",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "genre",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RecordShop.Controllers.AlbumController",
     "Method": "GetAlbumByTitle",
     "RelativePath": "albums/title",
     "HttpMethod": "GET",
@@ -109,6 +125,22 @@
     "Parameters": [
       {
         "Name": "title",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RecordShop.Controllers.AlbumController",
+    "Method": "GetAlbumByYear",
+    "RelativePath": "albums/year",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "year",
         "Type": "System.String",
         "IsRequired": false
       }

@@ -58,6 +58,28 @@ namespace RecordShop.Controllers
             }
             return Ok(album);
         }
+        [HttpGet("/albums/genre/")]
+        public IActionResult GetAlbumByGenre(string genre)
+        {
+            var albums = _albumService.GetAllAlbums();
+            var album = albums.FindAll(a => a.Genre.Any(g => g.Contains(genre, StringComparison.OrdinalIgnoreCase)));
+            if (album == null)
+            {
+                return NotFound();
+            }
+            return Ok(album);
+        }
+        [HttpGet("/albums/year/")]
+        public IActionResult GetAlbumByYear(string year)
+        {
+            var albums = _albumService.GetAllAlbums();
+            var album = albums.FindAll(a => a.ReleaseDate.Contains(year, StringComparison.OrdinalIgnoreCase));
+            if (album == null)
+            {
+                return NotFound();
+            }
+            return Ok(album);
+        }
         [Authorize]
         [HttpPost("/albums")]
         public IActionResult AddAlbum([FromBody] Album album)
