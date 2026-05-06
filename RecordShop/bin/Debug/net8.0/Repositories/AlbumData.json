@@ -1,14 +1,42 @@
 [
   {
-    "id": 1,
-    "title": "Spirit",
-    "artist": "Leona Lewis",
-    "genre": [ "Pop", "R&B" ],
-    "releasedate": "09-11-2007",
-    "rating": 65,
-    "price": 9.99,
-    "description": "After winning 2006 XFactor UK, Leona Lewis\\'s debut album brought the British Music back to the World charts. Her massive hit \"Bleeding Love\" topped the charts in multiple countries, including Billboard\\'s Hot100 and, to this day, it remains the best-selling debut album by a female artist in the UK."
-
+    "Id": 1,
+    "Title": "Spirit",
+    "Artist": "Leona Lewis",
+    "Genre": [
+      "Pop",
+      "R\u0026B"
+    ],
+    "ReleaseDate": "09-11-2007",
+    "Rating": 65,
+    "Price": 9.99,
+    "Description": "After winning 2006 XFactor UK, Leona Lewis\\\u0027s debut album brought the British Music back to the World charts. Her massive hit \u0022Bleeding Love\u0022 topped the charts in multiple countries, including Billboard\\\u0027s Hot100 and, to this day, it remains the best-selling debut album by a female artist in the UK."
+  },
+  {
+    "Id": 2,
+    "Title": "Echo",
+    "Artist": "Leona Lewis",
+    "Genre": [
+      "Pop",
+      "R\u0026B"
+    ],
+    "ReleaseDate": "09-11-2009",
+    "Rating": 59,
+    "Price": 10.99,
+    "Description": "Leona Lewis solidifies herself with her sophomore album. Powerful vocals and melodies that show why Leona Lewis is a vocal star!"
+  },
+  {
+    "Id": 4,
+    "Title": "Dreaming Out Loud",
+    "Artist": "OneRepublic",
+    "Genre": [
+      "Rock",
+      "Pop",
+      "Urban"
+    ],
+    "ReleaseDate": "20-11-2007",
+    "Rating": 80,
+    "Price": 7.99,
+    "Description": "OneRepublic\u0027s highly anticipated debut album after their massive hit \u0027Apologize\u0027 featuring Timbaland brings a mix of poprock and alternative sounds."
   }
-
 ]

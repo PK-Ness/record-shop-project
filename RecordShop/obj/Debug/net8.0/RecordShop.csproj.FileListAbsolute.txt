@@ -172,3 +172,5 @@ C:\Users\sampa\Documents\Northcoders\Week-9\RecordShop1\RecordShop\obj\Debug\net
 C:\Users\sampa\Documents\Northcoders\Week-9\RecordShop1\RecordShop\obj\Debug\net8.0\RecordShop.pdb
 C:\Users\sampa\Documents\Northcoders\Week-9\RecordShop1\RecordShop\obj\Debug\net8.0\RecordShop.genruntimeconfig.cache
 C:\Users\sampa\Documents\Northcoders\Week-9\RecordShop1\RecordShop\obj\Debug\net8.0\ref\RecordShop.dll
+C:\Users\sampa\Documents\Northcoders\Week-9\RecordShop1\RecordShop\bin\Debug\net8.0\AspNetCore.Authentication.JwtBearer.Extension.dll
+C:\Users\sampa\Documents\Northcoders\Week-9\RecordShop1\RecordShop\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

@@ -23,5 +23,30 @@ namespace RecordShop.Services
             _albumModel.AddAlbum(album);
             return album;
         }
+
+        public Album? UpdateAlbum(int id, Album updatedAlbum)
+        {
+            var model = _albumModel.GetAllAlbums();
+            var album = model.FirstOrDefault(a => a.Id == id);
+            if (album == null)
+            {
+                return null;
+            }
+            updatedAlbum.Id = id;
+            _albumModel.UpdateAlbum(id, updatedAlbum);
+            return updatedAlbum;
+        }
+
+        public Album? DeleteAlbum(int id, Album deletedAlbum)
+        {
+            var model = _albumModel.GetAllAlbums();
+            var album = model.FirstOrDefault(a => a.Id == id);
+            if (album == null)
+            {
+                return null;
+            }
+            _albumModel.DeleteAlbum(id, deletedAlbum);
+            return deletedAlbum;
+        }
     }
 }

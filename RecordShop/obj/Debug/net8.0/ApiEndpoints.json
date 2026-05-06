@@ -24,5 +24,63 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RecordShop.Controllers.AlbumController",
+    "Method": "GetAlbum",
+    "RelativePath": "albums/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RecordShop.Controllers.AlbumController",
+    "Method": "DeleteAlbum",
+    "RelativePath": "albums/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "deletedAlbum",
+        "Type": "RecordShop.Models.Album",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RecordShop.Controllers.AlbumController",
+    "Method": "UpdateAlbum",
+    "RelativePath": "albums/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatedAlbum",
+        "Type": "RecordShop.Models.Album",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

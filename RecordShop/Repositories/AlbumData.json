@@ -24,5 +24,19 @@
     "Rating": 59,
     "Price": 10.99,
     "Description": "Leona Lewis solidifies herself with her sophomore album. Powerful vocals and melodies that show why Leona Lewis is a vocal star!"
+  },
+  {
+    "Id": 4,
+    "Title": "Dreaming Out Loud",
+    "Artist": "OneRepublic",
+    "Genre": [
+      "Rock",
+      "Pop",
+      "Urban"
+    ],
+    "ReleaseDate": "20-11-2007",
+    "Rating": 80,
+    "Price": 7.99,
+    "Description": "OneRepublic\u0027s highly anticipated debut album after their massive hit \u0027Apologize\u0027 featuring Timbaland brings a mix of poprock and alternative sounds."
   }
 ]

@@ -26,5 +26,31 @@ namespace RecordShop.Models
             string updatedJson = JsonSerializer.Serialize(albums, options);
             File.WriteAllText(_filepath, updatedJson);
         }
+
+        public void UpdateAlbum(int id, Album updatedAlbum)
+        {
+            var albums = GetAllAlbums();
+            var albumIndex = albums.FindIndex(a => a.Id == id);
+            if (albumIndex != -1)
+            {
+                albums[albumIndex] = updatedAlbum;
+                var options = new JsonSerializerOptions { WriteIndented = true };
+                string updatedJson = JsonSerializer.Serialize(albums, options);
+                File.WriteAllText(_filepath, updatedJson);
+            }
+        }
+
+        public void DeleteAlbum(int id, Album deletedAlbum)
+        {
+            var albums = GetAllAlbums();
+            var albumIndex = albums.FindIndex(a => a.Id == id);
+            if (albumIndex != -1)
+            {
+                albums.RemoveAt(albumIndex);
+                var options = new JsonSerializerOptions { WriteIndented = true };
+                string updatedJson = JsonSerializer.Serialize(albums, options);
+                File.WriteAllText(_filepath, updatedJson);
+            }
+        }
     }
 }

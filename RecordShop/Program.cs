@@ -1,6 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.InMemory;
 using Microsoft.EntityFrameworkCore.SqlServer;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 namespace RecordShop
 {
@@ -20,6 +23,26 @@ namespace RecordShop
             builder.Services.AddScoped<Services.AlbumService>();
             builder.Services.AddTransient<Middleware.ShopMiddleware>();
 
+            var key = Encoding.UTF8.GetBytes("BUTTERFREEUSESSILVERWIND-ITSSUPEREFFECTIVE!ALAZAKAMFAINTED");
+
+            builder.Services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
+            .AddJwtBearer(options =>
+            {
+                options.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = true,
+                    ValidIssuer = "samuel-sampaio",
+                    ValidateAudience = true,
+                    ValidAudience = "record-shop",
+                    ValidateLifetime = false,
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(key)
+                };
+            });
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -30,7 +53,7 @@ namespace RecordShop
             }
 
             app.UseHttpsRedirection();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
 
