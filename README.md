@@ -9,7 +9,10 @@ FEATURES:
   - Find albums by their ID;
   - Add new albums to the database;
   - Updated album details;
-  - Delete albums from the database.
+  - Delete albums from the database;
+  - Filter search by album name, artist, genre and release year;
 
 FUTURE IMPLEMENTATIONS:
-  - Refined search;
+  - Testing;
+  - In-Memory Database;
+  - Reafactoring;
