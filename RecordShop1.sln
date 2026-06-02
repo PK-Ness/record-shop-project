@@ -1,9 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.37012.4 d17.14
+VisualStudioVersion = 17.14.37012.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordShop", "RecordShop\RecordShop.csproj", "{AAE7BE76-B879-49A1-923F-CD7E5DFC3BDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PitchPerfect", "PitchPerfect\PitchPerfect\PitchPerfect.csproj", "{DB4D2160-6D1A-441E-9DB0-ECD79879C270}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PitchPerfect.Client", "PitchPerfect\PitchPerfect.Client\PitchPerfect.Client.csproj", "{79ACDCEE-62DC-4955-853C-101E62F861B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{69776AC5-BE18-4D73-B23E-786543074365}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{AAE7BE76-B879-49A1-923F-CD7E5DFC3BDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAE7BE76-B879-49A1-923F-CD7E5DFC3BDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AAE7BE76-B879-49A1-923F-CD7E5DFC3BDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB4D2160-6D1A-441E-9DB0-ECD79879C270}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB4D2160-6D1A-441E-9DB0-ECD79879C270}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB4D2160-6D1A-441E-9DB0-ECD79879C270}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB4D2160-6D1A-441E-9DB0-ECD79879C270}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79ACDCEE-62DC-4955-853C-101E62F861B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79ACDCEE-62DC-4955-853C-101E62F861B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79ACDCEE-62DC-4955-853C-101E62F861B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79ACDCEE-62DC-4955-853C-101E62F861B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69776AC5-BE18-4D73-B23E-786543074365}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69776AC5-BE18-4D73-B23E-786543074365}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69776AC5-BE18-4D73-B23E-786543074365}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69776AC5-BE18-4D73-B23E-786543074365}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,11 +1,10 @@
 ﻿
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Components;
-using RecordShop.Models;
+using Shared.Models;
 using RecordShop.Services;
 using RouteAttribute = Microsoft.AspNetCore.Mvc.RouteAttribute;
 using Microsoft.AspNetCore.Authorization;
-
 namespace RecordShop.Controllers
 {
     [ApiController]

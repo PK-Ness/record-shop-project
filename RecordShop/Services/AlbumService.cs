@@ -1,4 +1,4 @@
-﻿using RecordShop.Models;
+﻿using Shared.Models;
 
 namespace RecordShop.Services
 {

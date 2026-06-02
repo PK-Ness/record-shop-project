@@ -1,0 +1,16 @@
+C:\Users\sampa\Documents\Northcoders\Week-9\RecordShop1\PitchPerfect\PitchPerfect.Client\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\sampa\Documents\Northcoders\Week-9\RecordShop1\PitchPerfect\PitchPerfect.Client\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\sampa\Documents\Northcoders\Week-9\RecordShop1\RecordShop\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\sampa\Documents\Northcoders\Week-9\RecordShop1\PitchPerfect\PitchPerfect.Client\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\sampa\Documents\Northcoders\Week-9\RecordShop1\RecordShop\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\sampa\Documents\Northcoders\Week-9\RecordShop1\PitchPerfect\PitchPerfect.Client\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\sampa\Documents\Northcoders\Week-9\RecordShop1\RecordShop\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\sampa\Documents\Northcoders\Week-9\RecordShop1\PitchPerfect\PitchPerfect.Client\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\sampa\Documents\Northcoders\Week-9\RecordShop1\RecordShop\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\sampa\Documents\Northcoders\Week-9\RecordShop1\PitchPerfect\PitchPerfect.Client\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\sampa\Documents\Northcoders\Week-9\RecordShop1\RecordShop\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\sampa\Documents\Northcoders\Week-9\RecordShop1\PitchPerfect\PitchPerfect.Client\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\sampa\Documents\Northcoders\Week-9\RecordShop1\RecordShop\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\sampa\Documents\Northcoders\Week-9\RecordShop1\PitchPerfect\PitchPerfect.Client\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\sampa\Documents\Northcoders\Week-9\RecordShop1\RecordShop\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\sampa\Documents\Northcoders\Week-9\RecordShop1\PitchPerfect\PitchPerfect.Client\obj\Debug\net8.0\staticwebassets.build.json

@@ -1,6 +1,6 @@
 ﻿using System.Text.Json;
 
-namespace RecordShop.Models
+namespace Shared.Models
 {
     public class AlbumModel
     {

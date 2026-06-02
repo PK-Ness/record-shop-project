@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Diagnostics.HealthChecks;
 using System.Text.Json;
-using RecordShop.Models;
+using Shared.Models;
 
 namespace RecordShop
 {

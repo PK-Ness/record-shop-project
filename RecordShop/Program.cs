@@ -20,11 +20,19 @@ namespace RecordShop
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-            builder.Services.AddScoped<Models.AlbumModel>();
             builder.Services.AddScoped<Services.AlbumService>();
             builder.Services.AddTransient<Middleware.ShopMiddleware>();
             builder.Services.AddHealthChecks().AddCheck<ShopHealthChecks>("shop_file_health_check", failureStatus: HealthStatus.Unhealthy, tags: new[] { "albums" });
-
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowBlazor",
+                    policy =>
+                    {
+                        policy.AllowAnyOrigin()
+                              .AllowAnyHeader()
+                              .AllowAnyMethod();
+                    });
+            });
             var key = Encoding.UTF8.GetBytes("BUTTERFREEUSESSILVERWIND-ITSSUPEREFFECTIVE!ALAZAKAMFAINTED");
 
             builder.Services.AddAuthentication(options =>
@@ -57,6 +65,7 @@ namespace RecordShop
             app.UseHttpsRedirection();
             app.UseAuthentication();
             app.UseAuthorization();
+            app.UseCors("AllowBlazor");
 
 
             app.MapControllers();
